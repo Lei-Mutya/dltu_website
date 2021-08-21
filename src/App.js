@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <h1>DR. JL TAMARGO UNIVERSITY</h1>
+      <h1>DR. J.L. TAMARGO UNIVERSITY</h1>
       <Navbar />
       <Switch>
         <Route path="/" exact component={Main} />
