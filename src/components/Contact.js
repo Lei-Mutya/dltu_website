@@ -1,11 +1,10 @@
 import React from 'react'
 
-const Navbar=()=>{
+function Contact(){
     return(
         <div>
-
+            <h1>CONTACT US</h1>
         </div>
     )
 }
-
-export default Navbar
+export default Contact
