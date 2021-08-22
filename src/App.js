@@ -17,9 +17,10 @@ import Sis from './components/Sis';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="container">
       <h1>DR. J.L. TAMARGO UNIVERSITY</h1>
       <Navbar />
+
       <Switch>
         <Route path="/" exact component={Main} />
         <Route path="/about" component={About} />
@@ -32,6 +33,7 @@ function App() {
         <Route path="/contact" component={Contact} />
         <Route path="/sis" component={Sis}/>
       </Switch>
+
       <Footer />
     </div>
     </Router>
