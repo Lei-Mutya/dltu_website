@@ -18,22 +18,24 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <h1>DR. J.L. TAMARGO UNIVERSITY</h1>
-      <Navbar />
-      <Switch>
-        <Route path="/" exact component={Main} />
-        <Route path="/about" component={About} />
-        <Route path="/visionmission" component={Visionmission}/>
-        <Route path="/administration" component={Administration}/>
-        <Route path="/admissreq" component={AdmissReq}/>
-        <Route path="/appform" component={AppForm}/>
-        <Route path="/appresult" component={AppResult}/>
-        <Route path="/coursesoff" component={Coursesoff}/>
-        <Route path="/contact" component={Contact} />
-        <Route path="/sis" component={Sis}/>
-      </Switch>
-      <Footer />
-    </div>
+        <h1>DR. J.L. TAMARGO UNIVERSITY</h1>
+        <Navbar />
+           <div className="container">
+           <Switch>
+              <Route path="/" exact component={Main} />
+              <Route path="/about" component={About} />
+              <Route path="/visionmission" component={Visionmission}/>
+              <Route path="/administration" component={Administration}/>
+              <Route path="/admissreq" component={AdmissReq}/>
+              <Route path="/appform" component={AppForm}/>
+              <Route path="/appresult" component={AppResult}/>
+              <Route path="/coursesoff" component={Coursesoff}/>
+              <Route path="/contact" component={Contact} />
+              <Route path="/sis" component={Sis}/>
+            </Switch>
+           </div>
+          <Footer />
+      </div>
     </Router>
     
   );
