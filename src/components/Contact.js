@@ -13,7 +13,7 @@ function Contact() {
           </h1>
           <div className="info">
             <h5 className="info1">Makati, Metro Manila</h5>
-            <h5 className="info2">tresuniversity@gmail.com</h5>
+            <h5 className="info2">dltu@gmail.com</h5>
             <h5 className="info3">123-456-7890</h5>
           </div>
         </Grid>

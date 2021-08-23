@@ -17,11 +17,10 @@ function About() {
           </h4>
           <br />
           <h5>
-            TRES University was founded with one purpose - to build a space for
-            all students to grow, learn and create with each passing day.
-            Through a unique teaching approach and a truly passionate staff, we
-            help students develop academically and personally to the highest
-            level.
+            DLTU was founded with one purpose - to build a space for all
+            students to grow, learn and create with each passing day. Through a
+            unique teaching approach and a truly passionate staff, we help
+            students develop academically and personally to the highest level.
           </h5>
           <br />
           <h5>

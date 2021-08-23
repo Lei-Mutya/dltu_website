@@ -1,22 +1,56 @@
-import React from 'react'
+import React from "react";
 
-function Administration(){
-    return(
-        <div>
-            <h1> SCHOOL ADMINISTRATION</h1>
-
-            <section>
-                <h4 className="pt-3">PRINCIPAL</h4>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-
-            </section>
-            <section className="pt-3">
-                <h4>COORDINATORS</h4>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                
-            </section>
+function Administration() {
+  return (
+    <div>
+      <h1 className="administration">
+        <b>SCHOOL ADMINISTRATION</b>
+      </h1>
+      <div className="container_team">
+        <div className="card">
+          <div>
+            <img src="../images/team1.png" alt="team1" className="imgBx" />
+          </div>
+          <div className="contentBx">
+            <h3>
+              <b>DR. JL TAMARGO</b>
+            </h3>
+          </div>
+          <br />
+          <h5 className="contentBx1">FOUNDER</h5>
         </div>
-
-    )
+      </div>
+      <div className="container_team1">
+        <div className="card">
+          <div className="content">
+            <div>
+              <img src="../images/team2.png" alt="team3" class="imgBx" />
+            </div>
+            <div className="contentBx">
+              <h3>
+                <b>SOLEIL MUTYA</b>
+              </h3>
+            </div>
+            <br />
+            <h5 className="contentBx1">Teaching Coordinator</h5>
+          </div>
+        </div>
+        <div className="card">
+          <div className="content">
+            <div>
+              <img src="../images/team3.png" alt="team3" class="imgBx" />
+            </div>
+            <div className="contentBx">
+              <h3>
+                <b>JAIME FERRER</b>
+              </h3>
+            </div>
+            <br />
+            <h5 className="contentBx1">Assistant Coordinator</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
-export default Administration
+export default Administration;
