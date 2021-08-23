@@ -1,20 +1,38 @@
-import React from 'react'
+import React from "react";
+import "../App.css";
 
-function Visionmission(){
-    return(
-        <div>
-            <h1 className="mb-4">VISION and MISSION STATEMENT</h1>
-            <section>
-                <h4 className="pt-3">VISION STATEMENT</h4>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-
-            </section>
-            <section className="pt-3">
-                <h4>MISSION STATEMENT</h4>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                
-            </section>
+function Visionmission() {
+  return (
+    <div className="container2">
+      <div>
+        <img src="../images/mission.jpg" alt="" className="img2" />
+      </div>
+      <div className="mission-vision">
+        <div className="mission">
+          <h3 style={{ textAlign: "center" }}>
+            <b>MISSION</b>
+          </h3>
+          <h5>
+            The mission of TRES University is to create a place where students
+            feel safe to tackle obstacles and accomplish all of their goals. We
+            strive to better our students through educational experiences both
+            in and out of the classroom.
+          </h5>
         </div>
-    )
+      </div>
+      <div className="mission-vision">
+        <div className="vision">
+          <h3 style={{ textAlign: "center" }}>
+            <b>VISION</b>
+          </h3>
+          <h5>
+            Our vision is to offer a variety of opportunities to help students
+            be the best version of themselves, while having some fun along the
+            way.
+          </h5>
+        </div>
+      </div>
+    </div>
+  );
 }
-export default Visionmission
+export default Visionmission;

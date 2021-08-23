@@ -1,3 +1,91 @@
-.App {
+/* About css */
+body {
+  font-family: "Lato", sans-serif;
+  color: #393e46;
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  color: #ffd369;
+  letter-spacing: 2px;
+}
+h4 {
+  margin-top: 5vh;
+}
+h5 {
+  margin-top: 2vh;
+}
+.containerAbout {
+  display: flex;
+  justify-content: center;
   text-align: center;
+}
+.about_us {
+  width: 70%;
+  padding: 30px 20px;
+}
+.img1 {
+  width: 45%;
+  padding: 20px 20px;
+}
+.learnMore {
+  border-radius: 20px;
+  height: 4vh;
+  background-color: #ffd369;
+  width: "110px";
+}
+
+/* mission css */
+.img2 {
+  width: 100%;
+  height: 100%;
+}
+.mission-vision {
+  display: flex;
+  justify-content: center;
+  margin-top: -90vh;
+  margin-bottom: 50vh;
+  padding: 30px;
+}
+.mission {
+  border: 2px solid black;
+  background-color: #ffd369;
+  width: 45vh;
+  padding: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-right: 40%;
+  margin-bottom: 25vh;
+}
+.vision {
+  border: 2px solid black;
+  background-color: #ffd369;
+  width: 45vh;
+  padding: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 40%;
+}
+
+/* Contact css */
+h1 {
+  color: #ffd369;
+  letter-spacing: 2px;
+}
+.containerContact {
+  padding: 20vh 10vh;
+}
+
+/* Course Offers */
+.course1 {
+  width: 80%;
+}
+.course2 {
+  width: 80%;
+}
+.course3 {
+  width: 80%;
+}
+.course4 {
+  width: 80%;
 }
