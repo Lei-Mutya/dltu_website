@@ -1,4 +1,8 @@
 import React from "react";
+import "../css/Admin.css";
+import team1 from "../images/team1.png";
+import team2 from "../images/team2.png";
+import team3 from "../images/team3.png";
 
 function Administration() {
   return (
@@ -7,9 +11,9 @@ function Administration() {
         <b>SCHOOL ADMINISTRATION</b>
       </h1>
       <div className="container_team">
-        <div className="card">
+        <div className="cardz">
           <div>
-            <img src="../images/team1.png" alt="team1" className="imgBx" />
+            <img src={team1} alt="team1" className="imgBx" />
           </div>
           <div className="contentBx">
             <h3>
@@ -20,11 +24,12 @@ function Administration() {
           <h5 className="contentBx1">FOUNDER</h5>
         </div>
       </div>
+
       <div className="container_team1">
-        <div className="card">
+        <div className="cardz">
           <div className="content">
             <div>
-              <img src="../images/team2.png" alt="team3" class="imgBx" />
+              <img src={team2} alt="team3" class="imgBx" />
             </div>
             <div className="contentBx">
               <h3>
@@ -35,10 +40,10 @@ function Administration() {
             <h5 className="contentBx1">Teaching Coordinator</h5>
           </div>
         </div>
-        <div className="card">
+        <div className="cardz">
           <div className="content">
             <div>
-              <img src="../images/team3.png" alt="team3" class="imgBx" />
+              <img src={team3} alt="team3" class="imgBx" />
             </div>
             <div className="contentBx">
               <h3>

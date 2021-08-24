@@ -1,0 +1,30 @@
+.img2 {
+  width: 100%;
+  height: 100%;
+}
+.mission-vision {
+  display: flex;
+  justify-content: center;
+  margin-top: -80vh;
+  margin-bottom: 50vh;
+  padding: 30px;
+}
+.mission {
+  border: 2px solid black;
+  background-color: #fec00f;
+  width: 45vh;
+  padding: 45px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-right: 40%;
+  margin-bottom: 25vh;
+}
+.vision {
+  border: 2px solid black;
+  background-color: #fec00f;
+  width: 45vh;
+  padding: 45px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-left: 40%;
+}

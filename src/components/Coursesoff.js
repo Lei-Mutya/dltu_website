@@ -1,61 +1,58 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
-import "../App.css";
+import "../css/Course.css";
+import courses1 from "../images/course1.jpg";
+import courses2 from "../images/course2.jpg";
+import courses3 from "../images/course3.jpg";
+import courses4 from "../images/course4.jpg";
 
 function Coursesoff() {
   return (
     <div>
-      <Grid>
-        <Grid item xs={12}>
-          <h1 className="courses">
-            <b>COURSES OFFERED</b>
-          </h1>
-        </Grid>
-        <hr />
+      <h1 className="courses">
+        <b>COURSES OFFERED</b>
+      </h1>
+      <div className="main_course">
         <div className="container_courses">
-          <div className="bs_nursing">
-            <Grid item xs={6} md={3}>
-              <img src="../images/course1.jpg" alt="" className="course1" />
-            </Grid>
-            <Grid item xs={6} md={3}>
-              <div className="bio1">
-                <h3 className="bs1">Bachelor of Science in Nursing</h3>
-              </div>
-            </Grid>
-          </div>
-          <div className="bs_pharmacy">
-            <Grid item xs={6} md={3}>
-              <img src="../images/course2.jpg" alt="" className="course2" />
-            </Grid>
-            <Grid item xs={6} md={3}>
-              <div className="bio2">
-                <h3 className="bs1">Bachelor of Science in Pharmacy</h3>
-              </div>
-            </Grid>
-          </div>
-          <Grid item xs={3}>
-            <div className="bio3">
-              <h3 className="bs2">Bachelor of Science in Psychology</h3>
+          <div className="cards">
+            <div>
+              <img src={courses1} alt="" className="course1" />
             </div>
-          </Grid>
-          <div className="bs_biology">
-            <Grid item xs={6} md={3}>
-              <img src="../images/course3.jpg" alt="" className="course3" />
-            </Grid>
           </div>
-
-          <Grid item xs={6}>
-            <div className="bio">
-              <h3 className="bs3">Bachelor of Science in Biology</h3>
-            </div>
-          </Grid>
-          <div className="bs_psychology">
-            <Grid item xs={6} md={3}>
-              <img src="../images/course4.jpg" alt="" className="course4" />
-            </Grid>
+          <div className="bio">
+            <h3>Bachelor of Science in Nursing</h3>
           </div>
         </div>
-      </Grid>
+        <div className="container_courses">
+          <div className="cards">
+            <div>
+              <img src={courses2} alt="" className="course1" />
+            </div>
+          </div>
+          <div className="bio">
+            <h3>Bachelor of Science in Pharmacy</h3>
+          </div>
+        </div>
+        <div className="container_courses">
+          <div className="cards">
+            <div>
+              <img src={courses3} alt="" className="course1" />
+            </div>
+          </div>
+          <div className="bio">
+            <h3>Bachelor of Science in Psychology</h3>
+          </div>
+        </div>
+        <div className="container_courses">
+          <div className="cards">
+            <div>
+              <img src={courses4} alt="" className="course1" />
+            </div>
+          </div>
+          <div className="bio">
+            <h3>Bachelor of Science in Biology</h3>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
