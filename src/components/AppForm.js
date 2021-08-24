@@ -1,19 +1,11 @@
-import React from 'react'
-import TextField from '@material-ui/core/TextField';
-import { makeStyles } from '@material-ui/core/styles';
+import React, {useState} from 'react'
+import {db} from '../firebase'
 
-<<<<<<< HEAD
-const useStyles = makeStyles((theme) => ({
-    root: {
-      '& .MuiTextField-root': {
-        margin: theme.spacing(1),
-        width: 200,
-      },
-    },
-  }));
-=======
+
+
 function AppForm(){
 
+  
     const [applicantId, setApplicantId]=useState(Math.floor(Math.random()*1000));
     const [firstname, setFirstname]=useState('');
     const [middlename, setMiddlename]=useState('');
@@ -47,10 +39,9 @@ function AppForm(){
         setContactNo('');
         setEmailAdd('');
     }
->>>>>>> bc1b9a155d63e2f51b594e6a1d914a941953613a
 
-function AppForm(){
-    const classes = useStyles();
+
+    
     
     return(
         <div>
@@ -132,4 +123,5 @@ function AppForm(){
         </div>
     )
 }
+
 export default AppForm
