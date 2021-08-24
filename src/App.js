@@ -13,6 +13,8 @@ import AppForm from './components/AppForm';
 import AppResult from './components/AppResult';
 import Coursesoff from './components/Coursesoff';
 import Sis from './components/Sis';
+import AdminLog from './components/AdminLog';
+import AdminMod from './components/AdminMod';
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
       <h1>DR. J.L. TAMARGO UNIVERSITY</h1>
       <Navbar />
       <Switch>
-        <Route path="/" exact component={Main} />
+        <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
         <Route path="/visionmission" component={Visionmission}/>
         <Route path="/administration" component={Administration}/>
@@ -31,6 +33,8 @@ function App() {
         <Route path="/coursesoff" component={Coursesoff}/>
         <Route path="/contact" component={Contact} />
         <Route path="/sis" component={Sis}/>
+        <Route path="/adminlog" component={AdminLog}/>
+        <Route path="/adminmod" component={AdminMod}/>
       </Switch>
       <Footer />
     </div>
@@ -40,11 +44,4 @@ function App() {
 }
 
 
-const Main=()=> {
-  return(
-      <div>
-          <Home />
-      </div>
-  )
-}
 export default App;

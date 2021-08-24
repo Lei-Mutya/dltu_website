@@ -41,6 +41,7 @@ function Navbar(){
                     <Link to='/appresult' className="dropdown-item">Application Result</Link>
                   </div>
                 </li>
+                
                 {/*COURSES OFFERED*/}
                 <li className="nav-item">
                   <Link to='/coursesoff' className="nav-link text-light mx-4">COURSES OFFERED</Link>
