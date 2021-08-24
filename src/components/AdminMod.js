@@ -57,8 +57,7 @@ class AdminMod extends React.Component
                             <td>{applicant.contactNo}</td>
                             <td>{applicant.emailAdd}</td>
                         </tr>
-                 
-        )
+                    )
             })
         } 
            </table>

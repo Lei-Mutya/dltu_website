@@ -18,7 +18,7 @@ const handleLog=(e)=>{
         history.push("/studentlog");
     }
     else{
-        alert("We cannot verify you this time, kindly check the password provided");
+        alert("We cannot verify your account this time, kindly check the password provided");
     }
 }
 

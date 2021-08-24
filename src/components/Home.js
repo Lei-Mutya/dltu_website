@@ -5,7 +5,7 @@ function Home() {
     return(
         <div>
             <h1>HOME PAGE</h1>
-            {/*SLIDER - 700x300 size image*/}
+            
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active">

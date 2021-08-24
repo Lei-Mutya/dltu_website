@@ -18,7 +18,7 @@ function AdminLog(){
             
             }
             else{
-                alert("username and/or password is incorrect");
+                alert("Your username and/or password is incorrect");
             }
         }
     return(

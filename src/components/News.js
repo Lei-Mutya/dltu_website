@@ -4,7 +4,7 @@ function News(){
     return(
     <>
        
-        <h2 className="mt-4">Featured News</h2>
+        <h1 className="mt-4">Featured News</h1>
         <div className="card-group">
             <div className="card">
                 <img src="https://www.telegraph.co.uk/multimedia/archive/01834/grad_1834543a.jpg" className="card-img-top" alt="Class 2021"/>

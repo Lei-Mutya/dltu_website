@@ -29,7 +29,7 @@ const StudentLog=()=>{
 
         <form onSubmit={handleLog}>
             <p>
-                <label>Username:</label>
+                <label>Student Number:</label>
                 <input type="text" name="username"  onChange={(e)=> setUsername(e.target.value)} />
             </p>
             <p>

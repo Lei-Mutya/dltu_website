@@ -33,8 +33,8 @@ class AppResult extends React.Component
             {
                 return(
                         <div>
-                                <p>APPLICANT ID: <Link to='/ApplicantVerify'>{student.appId}</Link></p>
-                                <p>APPLICATION STATUS:{student.appStatus}</p>
+                                <p>APPLICANT ID : <Link to='/ApplicantVerify'>{student.appId}</Link></p>
+                                <p>APPLICATION STATUS :{student.appStatus}</p>
                                   
                                 <hr/>
                         </div>        

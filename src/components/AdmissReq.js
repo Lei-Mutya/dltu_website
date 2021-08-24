@@ -22,7 +22,7 @@ function AdmissReq(){
                     <li>Proof of Payment for the DLTU Exam</li>
                 </ul>
 
-                <h4>DLTU Exam Schedule:</h4>
+                <h3>DLTU Exam Schedule:</h3>
                 <p>MONDAYS-FRIDAYS</p>
                 <p>9:00 AM and 2:00 PM</p>
             </section>

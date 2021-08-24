@@ -9,7 +9,7 @@ const StudentMod = () => {
 
         <h4>Welcome!</h4>
 
-        <p><Link to='/studentlog'>Log-out</Link></p>
+        <p><Link to='/studentlog'>LOG-OUT</Link></p>
         </>
     )
 }

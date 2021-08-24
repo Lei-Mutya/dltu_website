@@ -11,9 +11,9 @@ function Administration(){
                     assisting students, supporting faculty, maintaining academic records and more.</p>
                 <p>The school administrator, in consultation with staff, establishes goals and
 directions for the school and leads staff to work cooperatively toward the
-achievement of these goals and directions.</p>
+achievement of these goals and directions.</p> 
 
-            </section>
+            </section> 
            
         </div>
 

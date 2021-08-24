@@ -1,11 +1,8 @@
 import React, {useState} from 'react'
 import {db} from '../firebase'
 
-
-
 function AppForm(){
 
-  
     const [applicantId, setApplicantId]=useState(Math.floor(Math.random()*1000));
     const [firstname, setFirstname]=useState('');
     const [middlename, setMiddlename]=useState('');
