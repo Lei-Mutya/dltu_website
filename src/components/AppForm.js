@@ -97,7 +97,7 @@ function AppForm(){
                 </p>
 
                 <button type="submit">Submit Application</button>
->>>>>>> 9dfbd599d835de99007c19db80a9f1fe5d4309ec
+
                 </form>
             </section>
         </div>
