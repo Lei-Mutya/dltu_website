@@ -3,7 +3,7 @@ import React from 'react'
 function News(){
     return(
     <>
-        {/*100x160 image size*/}
+       
         <h2 className="mt-4">Featured News</h2>
         <div className="card-group">
             <div className="card">
