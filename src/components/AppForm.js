@@ -10,7 +10,6 @@ function AppForm(){
     const [address, setAddress]=useState('');
     const [contactNo, setContactNo]=useState('');
     const [emailAdd, setEmailAdd]=useState('');
-    const [result, setResult]=useState(false);
 
     const handleSubmit=(e)=>{
         e.preventDefault();
@@ -21,8 +20,7 @@ function AppForm(){
             lastname: lastname,
             address: address,
             contactNo: contactNo,
-            emailAdd: emailAdd,
-            result: result
+            emailAdd: emailAdd
         })
         .then(()=>{
             alert("Application has been submitted!");
@@ -37,7 +35,6 @@ function AppForm(){
         setAddress('');
         setContactNo('');
         setEmailAdd('');
-        setResult('');
     }
 
     return(
@@ -111,15 +108,6 @@ function AppForm(){
                     />
                 </p>
 
-                <p>Result: 
-                    <input 
-                        type="text" 
-                        name="result" 
-                        value={result}
-                        onChange={(e)=> setResult(e.target.value)}
-                        disabled
-                    />
-                </p>
 
                 <button type="submit">Submit Application</button>
                 </form>
