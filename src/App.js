@@ -18,7 +18,7 @@ function App() {
   return (
     <Router>
       <div>
-        <h1>DR. J.L. TAMARGO UNIVERSITY</h1>
+        <div className="header_jl"></div>
         <Navbar />
         <div className="container">
           <Switch>

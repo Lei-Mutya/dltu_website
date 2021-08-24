@@ -1,11 +1,14 @@
 import React from "react";
 import News from "./News";
-import "../css/Home.css";
 
 function Home() {
   return (
     <div>
-      <h1 className="container_home">HOME</h1>
+      <h1
+        style={{ color: "#fec00f", marginTop: "100px", marginBottom: "50px" }}
+      >
+        HOME
+      </h1>
       {/*SLIDER - 700x300 size image*/}
       <div
         id="carouselExampleControls"

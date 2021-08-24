@@ -1,106 +1,138 @@
-import React from 'react'
-import TextField from '@material-ui/core/TextField';
-import { makeStyles } from '@material-ui/core/styles';
+import React, { useState } from "react";
+import { db } from "../firebase";
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      '& .MuiTextField-root': {
-        margin: theme.spacing(1),
-        width: 200,
-      },
-    },
-  }));
+function AppForm() {
+  const [applicantId, setApplicantId] = useState(
+    Math.floor(Math.random() * 1000)
+  );
+  const [firstname, setFirstname] = useState("");
+  const [middlename, setMiddlename] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [address, setAddress] = useState("");
+  const [contactNo, setContactNo] = useState("");
+  const [emailAdd, setEmailAdd] = useState("");
+  const [result, setResult] = useState(false);
 
-function AppForm(){
-    const classes = useStyles();
-    
-    return(
-        <div>
-            <h1>ONLINE APPLICATION FORM</h1>
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    db.collection("applicants")
+      .add({
+        applicantId: applicantId,
+        firstname: firstname,
+        middlename: middlename,
+        lastname: lastname,
+        address: address,
+        contactNo: contactNo,
+        emailAdd: emailAdd,
+        result: result,
+      })
+      .then(() => {
+        alert("Application has been submitted!");
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+    setApplicantId("");
+    setFirstname("");
+    setMiddlename("");
+    setLastname("");
+    setAddress("");
+    setContactNo("");
+    setEmailAdd("");
+    setResult("");
+  };
 
-            <section>
-                
-                <form onSubmit={handleSubmit}>
-                <p>Applicant ID
-                    <input
-                        type="text"
-                        name="applicantId"
-                        value={applicantId}
-                        onChange={(e)=> setApplicantId(e.target.value)}
-                    />
-                </p>
+  return (
+    <div>
+      <h1>ONLINE APPLICATION FORM</h1>
 
-                <p>Firstname:   
-                    <input 
-                        type="text" 
-                        name="firstname" 
-                        value={firstname}
-                        onChange={(e)=> setFirstname(e.target.value)}
-                    />
-                </p>
+      <section>
+        <form onSubmit={handleSubmit}>
+          <p>
+            Applicant ID
+            <input
+              type="text"
+              name="applicantId"
+              value={applicantId}
+              onChange={(e) => setApplicantId(e.target.value)}
+            />
+          </p>
 
-                <p>Middlename:   
-                    <input 
-                        type="text" 
-                        name="middlename"
-                        value={middlename}
-                        onChange={(e)=> setMiddlename(e.target.value)}    
-                    />
-                </p>
+          <p>
+            Firstname:
+            <input
+              type="text"
+              name="firstname"
+              value={firstname}
+              onChange={(e) => setFirstname(e.target.value)}
+            />
+          </p>
 
-                <p>Lastname:   
-                    <input 
-                        type="text" 
-                        name="lastname"
-                        value={lastname}
-                        onChange={(e)=> setLastname(e.target.value)}   
-                    />
-                </p>
+          <p>
+            Middlename:
+            <input
+              type="text"
+              name="middlename"
+              value={middlename}
+              onChange={(e) => setMiddlename(e.target.value)}
+            />
+          </p>
 
+          <p>
+            Lastname:
+            <input
+              type="text"
+              name="lastname"
+              value={lastname}
+              onChange={(e) => setLastname(e.target.value)}
+            />
+          </p>
 
-                <p>Address:   
-                    <input 
-                        type="text" 
-                        name="address"
-                        value={address}
-                        onChange={(e)=> setAddress(e.target.value)} 
-                />
-                </p>
+          <p>
+            Address:
+            <input
+              type="text"
+              name="address"
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
+            />
+          </p>
 
+          <p>
+            Contact No:
+            <input
+              type="text"
+              name="contactNo"
+              value={contactNo}
+              onChange={(e) => setContactNo(e.target.value)}
+            />
+          </p>
 
-                <p>Contact No:   
-                    <input 
-                        type="text" 
-                        name="contactNo"
-                        value={contactNo}
-                        onChange={(e)=> setContactNo(e.target.value)} 
-                    />
-                </p>
+          <p>
+            Email Address:
+            <input
+              type="text"
+              name="emailAdd"
+              value={emailAdd}
+              onChange={(e) => setEmailAdd(e.target.value)}
+            />
+          </p>
 
-                <p>Email Address:   
-                    <input 
-                        type="text" 
-                        name="emailAdd"
-                        value={emailAdd}
-                        onChange={(e)=> setEmailAdd(e.target.value)} 
-                    />
-                </p>
+          <p>
+            Result:
+            <input
+              type="text"
+              name="result"
+              value={result}
+              onChange={(e) => setResult(e.target.value)}
+              disabled
+            />
+          </p>
 
-                <p>Result: 
-                    <input 
-                        type="text" 
-                        name="result" 
-                        value={result}
-                        onChange={(e)=> setResult(e.target.value)}
-                        disabled
-                    />
-                </p>
-
-                <button type="submit">Submit Application</button>
-
-                </form>
-            </section>
-        </div>
-    )
+          <button type="submit">Submit Application</button>
+        </form>
+      </section>
+    </div>
+  );
 }
-export default AppForm
+export default AppForm;
