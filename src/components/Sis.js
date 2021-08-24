@@ -5,7 +5,7 @@ function Sis(){
     return(
         <div>
             <h1>STUDENT INFORMATION SYSTEM</h1>
-            <Link to='/'>Student Log-In</Link>
+            <Link to='/studentlog'>Student Log-In</Link>
             <br/>
             <br/>
             <h1>Admin</h1>

@@ -2,6 +2,7 @@ import React from 'react'
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 
+<<<<<<< HEAD
 const useStyles = makeStyles((theme) => ({
     root: {
       '& .MuiTextField-root': {
@@ -10,6 +11,43 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   }));
+=======
+function AppForm(){
+
+    const [applicantId, setApplicantId]=useState(Math.floor(Math.random()*1000));
+    const [firstname, setFirstname]=useState('');
+    const [middlename, setMiddlename]=useState('');
+    const [lastname, setLastname]=useState('');
+    const [address, setAddress]=useState('');
+    const [contactNo, setContactNo]=useState('');
+    const [emailAdd, setEmailAdd]=useState('');
+
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+        db.collection('applicants').add({
+            applicantId: applicantId,
+            firstname: firstname,
+            middlename: middlename,
+            lastname: lastname,
+            address: address,
+            contactNo: contactNo,
+            emailAdd: emailAdd
+        })
+        .then(()=>{
+            alert("Application has been submitted!");
+        })
+        .catch((error)=>{
+            alert(error.message);
+        });
+        setApplicantId('');
+        setFirstname('');
+        setMiddlename('');
+        setLastname('');
+        setAddress('');
+        setContactNo('');
+        setEmailAdd('');
+    }
+>>>>>>> bc1b9a155d63e2f51b594e6a1d914a941953613a
 
 function AppForm(){
     const classes = useStyles();
@@ -86,15 +124,6 @@ function AppForm(){
                     />
                 </p>
 
-                <p>Result: 
-                    <input 
-                        type="text" 
-                        name="result" 
-                        value={result}
-                        onChange={(e)=> setResult(e.target.value)}
-                        disabled
-                    />
-                </p>
 
                 <button type="submit">Submit Application</button>
 
