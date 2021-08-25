@@ -1,16 +1,48 @@
 import React from 'react'
+import {db} from '../firebase'
+import {Link} from 'react-router-dom'
 
-function AppResult(){
-    return(
+class AppResult extends React.Component
+{
+    state={
+        students:null
+    }
+    componentDidMount(){
+        console.log("Mounted");
+        db.collection('students')
+        .get()
+        .then(snapshot=>{
+            const students=[];
+            snapshot.forEach(doc =>{
+                const data=doc.data()
+                students.push(data);
+            })
+            this.setState({students: students})
+           // console.log(snapshot);
+        })
+        .catch(error=> console.log(error))
+      }
+    
+    render(){
+        
+        return(
+            
         <div>
-            <h1>APPLICATION RESULT</h1>
-
-            <section>
-                <h4 className="pt-3">Please enter your application ID to see the result</h4>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-
-            </section>
-        </div>
+        <h1>List of Passed Applicants</h1>
+        {this.state.students && this.state.students.map(student => 
+            {
+                return(
+                        <div>
+                                <p>APPLICANT ID : <Link to='/ApplicantVerify'>{student.appId}</Link></p>
+                                <p>APPLICATION STATUS :{student.appStatus}</p>
+                                  
+                                <hr/>
+                        </div>        
+                    )
+            })
+        } 
+        </div>  
     )
+ }
 }
 export default AppResult

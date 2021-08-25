@@ -1,5 +1,6 @@
 import React from 'react'
 import {db} from '../firebase'
+import {Link} from 'react-router-dom'
 
 class AdminMod extends React.Component
 {
@@ -26,8 +27,13 @@ class AdminMod extends React.Component
     render(){
         return(
             <>
-        
+
+          
+
         <h1>Applicants</h1>
+          {/*ADD STUDENT*/}
+          <button><Link to='/addstudent'>Add Student</Link></button>
+
         <table>
                         <tr>
                             <th>Applicant ID</th>
@@ -37,7 +43,6 @@ class AdminMod extends React.Component
                             <th>Address</th>
                             <th>Contact #</th>
                             <th>Email Address</th>
-                            <th>Result</th>
                         </tr>
         {this.state.applicants && this.state.applicants.map(applicant => 
             {
@@ -51,10 +56,8 @@ class AdminMod extends React.Component
                             <td>{applicant.address}</td>
                             <td>{applicant.contactNo}</td>
                             <td>{applicant.emailAdd}</td>
-                            <td>{String(applicant.result)}</td>
                         </tr>
-                 
-        )
+                    )
             })
         } 
            </table>
