@@ -19,7 +19,7 @@ function Home() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src="https://assets.wordstream.com/s3fs-public/styles/simple_image/public/images/media/images/banner-ads-examples-intro-bridgewater-state.jpg?epGhm7BhvbLMGQpdmVxXg4BcPkM5JyqJ&itok=bylWIi9J"
+              src="https://image.shutterstock.com/image-photo/healthcare-people-group-professional-doctor-260nw-1241582959.jpg"
               className="d-block w-100 carouIMG"
               alt="Theme"
             />

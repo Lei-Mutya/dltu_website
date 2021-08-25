@@ -37,7 +37,7 @@ function Administration() {
               </h3>
             </div>
             <br />
-            <h5 className="contentBx1">Teaching Coordinator</h5>
+            <h5 className="contentBx1">Dean, College of Nursing</h5>
           </div>
         </div>
         <div className="cardz">
@@ -51,7 +51,7 @@ function Administration() {
               </h3>
             </div>
             <br />
-            <h5 className="contentBx1">Assistant Coordinator</h5>
+            <h5 className="contentBx1">Area Chairperson, BS Nursing</h5>
           </div>
         </div>
       </div>

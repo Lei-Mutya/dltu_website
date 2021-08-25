@@ -6,13 +6,13 @@
 }
 .mission-vision {
   display: flex;
-  justify-content: center;
   padding: 30px;
+  justify-content:center;
 }
 .mission {
   border: 2px solid black;
   background-color: #fec00f;
-  width: 45vh;
+  width: 60vh;
   padding: 45px;
   border-radius: 15px;
   overflow: hidden;
@@ -20,7 +20,7 @@
 .vision {
   border: 2px solid black;
   background-color: #fec00f;
-  width: 45vh;
+  width: 60vh;
   padding: 45px;
   border-radius: 15px;
   overflow: hidden;

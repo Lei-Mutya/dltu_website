@@ -36,9 +36,8 @@ class AppResult extends React.Component
                         <div className="container">
                                 <div className="row justify-content-center">
                                         <div className="col-7">
-                                            <p>APPLICANT ID : <Link to='/ApplicantVerify'>{student.appId}</Link></p>
-                                            <p>APPLICATION STATUS :{student.appStatus}</p>
-                                            
+                                            <p className="fw-bold">APPLICANT ID : <Link to='/ApplicantVerify'>{student.appId}</Link></p>
+                                            <p className="fw-bold ">APPLICATION STATUS :{student.appStatus}</p>
                                             <hr/>
                                         </div>
                                 </div>

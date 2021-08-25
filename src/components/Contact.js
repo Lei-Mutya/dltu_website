@@ -1,10 +1,44 @@
-import React from "react";
+import React, {useState} from "react";
 import "../css/Contact.css";
 import dltulogo from "../images/dltuLogo.png";
 import TextField from "@material-ui/core/TextField";
 import { Grid } from "@material-ui/core";
+import {db} from '../firebase';
 
 function Contact() {
+
+
+  const [name, setName]=useState('');
+    const [email, setEmail]=useState('');
+    const [phone, setPhone]=useState('');
+    const [address, setAddress]=useState('');
+    const [subject, setSubject]=useState('');
+    const [message, setMessage]=useState('');
+
+    const handleConSubmit=(e)=>{
+        e.preventDefault();
+        db.collection('contacts').add({
+           	name: name,
+email: email,
+		phone: phone,
+		address: address,
+		subject: subject,
+		message: message
+        })
+        .then(()=>{
+            alert("Your inquiry has been sent!");
+        })
+        .catch((error)=>{
+            alert(error.message);
+        });
+        setName('');
+        setEmail('');
+        setPhone('');
+        setAddress('');
+        setSubject('');
+        setMessage('');
+    }
+
   return (
     <div className="containerContact">
       <Grid>
@@ -23,11 +57,15 @@ function Contact() {
           </div>
         </Grid>
         <div className="sample">
+          <form onSubmit={handleConSubmit}>
+
           <Grid item sm={12}>
             <TextField
               required
               color="primary"
               id="name"
+              value={name}
+              onChange={(e)=> setName(e.target.value)}
               label="Name"
               fullWidth
               style={{ margin: 8 }}
@@ -39,6 +77,8 @@ function Contact() {
             <TextField
               required
               id="email"
+              value={email}
+              onChange={(e)=> setEmail(e.target.value)}
               label="Email"
               fullWidth
               style={{ margin: 8 }}
@@ -51,6 +91,8 @@ function Contact() {
               required
               fullWidth
               id="phone"
+              value={phone}
+              onChange={(e)=> setPhone(e.target.value)}
               label="Phone"
               style={{ margin: 8 }}
               placeholder="Enter your phone number"
@@ -62,6 +104,8 @@ function Contact() {
               required
               fullWidth
               id="address"
+              value={address}
+              onChange={(e)=> setAddress(e.target.value)}
               label="Address"
               style={{ margin: 8 }}
               InputLabelProps={{
@@ -71,6 +115,8 @@ function Contact() {
             />
             <TextField
               id="subject"
+              value={subject}
+              onChange={(e)=> setSubject(e.target.value)}
               label="Subject"
               style={{ margin: 8 }}
               placeholder="Type the subject"
@@ -82,6 +128,8 @@ function Contact() {
             />
             <TextField
               id="message"
+              value={message}
+              onChange={(e)=> setMessage(e.target.value)}
               label="Message"
               style={{ margin: 8 }}
               placeholder="Type your message here..."
@@ -94,12 +142,14 @@ function Contact() {
             />
 
             <button
+              type="submit"
               className="send btn btn-block btn-warning"
               style={{ width: "99%", margin: "40px 0px 8px 8px" }}
             >
               Submit
             </button>
           </Grid>
+          </form>
         </div>
       </Grid>
     </div>
