@@ -1,5 +1,6 @@
 import React from "react";
 import News from "./News";
+import '../css/StudentMod.css'
 
 function Home() {
   return (
@@ -19,21 +20,21 @@ function Home() {
           <div className="carousel-item active">
             <img
               src="https://assets.wordstream.com/s3fs-public/styles/simple_image/public/images/media/images/banner-ads-examples-intro-bridgewater-state.jpg?epGhm7BhvbLMGQpdmVxXg4BcPkM5JyqJ&itok=bylWIi9J"
-              className="d-block w-100"
+              className="d-block w-100 carouIMG"
               alt="Theme"
             />
           </div>
           <div class="carousel-item">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQruPL30aj6w_9qlRgQ8kvc0YiEOTdRjfa_Bw&usqp=CAU"
-              className="d-block w-100"
+              className="d-block w-100 carouIMG"
               alt="Eagle"
             />
           </div>
           <div class="carousel-item">
             <img
               src="https://image.shutterstock.com/image-photo/happy-students-diplomas-near-campus-260nw-1765367492.jpg"
-              className="d-block w-100"
+              className="d-block w-100 carouIMG"
               alt="Students Life"
             />
           </div>

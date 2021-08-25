@@ -22,21 +22,34 @@ function AdminLog(){
             }
         }
     return(
-        <>
-        <h1>ADMIN MODULE LOG-IN</h1>
-        <form onSubmit={handleLog}>
-            <p>
-                <label>Username:</label>
-                <input type="text" name="username"  onChange={(e)=> setUsername(e.target.value)} />
-            </p>
-            <p>
-                <label>Password:</label>
-                <input type="password" name="password"  onChange={(e)=> setPassword(e.target.value)}/>
-            </p>
-            <button type="submit">LOG-IN</button>
-            
-        </form>
-    </>
+        <div className="container py-5">
+            <h1 className="text-center">ADMIN MODULE LOG-IN</h1>
+            <form onSubmit={handleLog} className="my-4">
+                <div className="row justify-content-center pb-3">
+                    <div className="col-5">
+                        <p>
+                            <label className="form-label" for="username">Username:</label>
+                            <input type="text" name="username" className="form-control"  onChange={(e)=> setUsername(e.target.value)} />
+                        </p>
+                    </div>
+                </div>
+                <div className="row justify-content-center pb-3">
+                    <div className="col-5">
+                        <p>                       
+                            <label className="form-label" for="password">Password:</label>
+                            <input type="password" name="password" className="form-control"  onChange={(e)=> setPassword(e.target.value)}/>
+                        </p>
+                    </div>
+                </div>
+                <div className="row justify-content-center pb-5">
+                    <div className="col-1">
+                        <button type="submit" className="btn rounded btn-warning">LOG-IN</button>
+                    </div>
+                </div>
+                
+                
+            </form>
+        </div>
     )
 }
 export default AdminLog

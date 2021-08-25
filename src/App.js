@@ -13,6 +13,12 @@ import AppForm from "./components/AppForm";
 import AppResult from "./components/AppResult";
 import Coursesoff from "./components/Coursesoff";
 import Sis from "./components/Sis";
+import AdminLog from './components/AdminLog';
+import AdminMod from './components/AdminMod';
+import AddStudent from './components/AddStudent';
+import ApplicantVerify from './components/ApplicantVerify';
+import StudentLog from './components/StudentLog';
+import StudentMod from './components/StudentMod';
 
 function App() {
   return (
@@ -32,6 +38,12 @@ function App() {
             <Route path="/coursesoff" component={Coursesoff} />
             <Route path="/contact" component={Contact} />
             <Route path="/sis" component={Sis} />
+            <Route path="/adminlog" component={AdminLog}/>
+            <Route path="/adminmod" component={AdminMod}/>
+            <Route path="/addstudent" component={AddStudent}/>
+            <Route path="/applicantverify" component={ApplicantVerify}/>
+            <Route path="/studentlog" component={StudentLog}/>
+            <Route path="/studentmod" component={StudentMod}/>
           </Switch>
         </div>
         <Footer />

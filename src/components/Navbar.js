@@ -1,12 +1,13 @@
 import React from "react";
 import mainLogo from "../images/dltuLogo.png";
+import '../css/mainlogo.css'
 import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <div className="bg-dark">
       <div className="mainLogo_banner">
-        <img src={mainLogo} alt="" className="main_Logo" />
+        <img src={mainLogo} alt="" className="main_Logo mainImage" />
       </div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark ps-4">
         <div className="container">

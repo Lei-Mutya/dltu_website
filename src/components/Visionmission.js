@@ -1,16 +1,12 @@
 import React from "react";
 import "../css/Mission.css";
-import missionvision from "../images/mission.jpg";
 
 function Visionmission() {
   return (
-    <div className="container2">
-      <div>
-        <img src={missionvision} alt="" className="img2" />
-      </div>
+    <div className="container container2 img2">
       <div className="mission-vision">
         <div className="mission">
-          <h2 style={{ textAlign: "center", marginBottom: "2vh" }}>
+          <h2 style={{ textAlign: "center"}}>
             <b>MISSION</b>
           </h2>
           <h5>
@@ -23,7 +19,7 @@ function Visionmission() {
       </div>
       <div className="mission-vision">
         <div className="vision">
-          <h2 style={{ textAlign: "center", marginBottom: "2vh" }}>
+          <h2 style={{ textAlign: "center"}}>
             <b>VISION</b>
           </h2>
           <h5>

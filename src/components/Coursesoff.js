@@ -11,8 +11,8 @@ function Coursesoff() {
       <h1 className="courses">
         <b>COURSES OFFERED</b>
       </h1>
-      <div className="main_course">
-        <div className="container_courses">
+      <div className="main_course row">
+        <div className="col container_courses">
           <div className="cards">
             <div>
               <img src={courses1} alt="" className="course1" />
@@ -22,7 +22,7 @@ function Coursesoff() {
             <h3>Bachelor of Science in Nursing</h3>
           </div>
         </div>
-        <div className="container_courses">
+        <div className="col container_courses">
           <div className="cards">
             <div>
               <img src={courses2} alt="" className="course1" />
@@ -32,7 +32,7 @@ function Coursesoff() {
             <h3>Bachelor of Science in Pharmacy</h3>
           </div>
         </div>
-        <div className="container_courses">
+        <div className="col container_courses">
           <div className="cards">
             <div>
               <img src={courses3} alt="" className="course1" />
@@ -42,7 +42,7 @@ function Coursesoff() {
             <h3>Bachelor of Science in Psychology</h3>
           </div>
         </div>
-        <div className="container_courses">
+        <div className="col container_courses">
           <div className="cards">
             <div>
               <img src={courses4} alt="" className="course1" />

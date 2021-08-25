@@ -1,4 +1,5 @@
 import React from 'react'
+import "../css/AppResult.css"
 import {db} from '../firebase'
 import {Link} from 'react-router-dom'
 
@@ -28,15 +29,19 @@ class AppResult extends React.Component
         return(
             
         <div>
-        <h1>List of Passed Applicants</h1>
+        <h1 className="text-center">List of Passed Applicants</h1>
         {this.state.students && this.state.students.map(student => 
             {
                 return(
-                        <div>
-                                <p>APPLICANT ID : <Link to='/ApplicantVerify'>{student.appId}</Link></p>
-                                <p>APPLICATION STATUS :{student.appStatus}</p>
-                                  
-                                <hr/>
+                        <div className="container">
+                                <div className="row justify-content-center">
+                                        <div className="col-7">
+                                            <p>APPLICANT ID : <Link to='/ApplicantVerify'>{student.appId}</Link></p>
+                                            <p>APPLICATION STATUS :{student.appStatus}</p>
+                                            
+                                            <hr/>
+                                        </div>
+                                </div>
                         </div>        
                     )
             })

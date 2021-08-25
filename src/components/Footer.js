@@ -34,8 +34,7 @@ function Footer(){
 
                                 <div className="col-md-5 col-12">
                                     <div className="form-outline form-white mb-4">
-                                        <input type="email" className="form-control"/>
-                                        <label className="form-label">Email Address</label>
+                                        <input type="email" className="form-control" placeholder="Email Address"/>
                                     </div>
                                 </div>
 
