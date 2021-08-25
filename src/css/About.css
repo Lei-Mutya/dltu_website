@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+}
+.about_header {
+  color: #fec00f;
+  letter-spacing: 2px;
+}
+.about_h4 {
+  margin-top: 5vh;
+}
+.about_h5 {
+  margin-top: 2vh;
+}
+.containerAbout {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.about_us {
+  width: 70%;
+  padding: 30px 20px;
+}
+.img1 {
+  width: 45%;
+  padding: 20px 20px;
+}
+.learnMore {
+  border-radius: 20px;
+  height: 4vh;
+  background-color: #fec00f;
+  width: "110px";
+}

@@ -1,25 +1,39 @@
-import React from 'react'
+import React from "react";
+import "../css/Mission.css";
+import missionvision from "../images/mission.jpg";
 
-function Visionmission(){
-    return(
-        <div>
-            <h1 className="mb-4">VISION and MISSION STATEMENT</h1>
-            <section>
-                <h4 className="pt-3">VISION STATEMENT</h4>
-                <p>Our vision is to develop well rounded, confident and responsible individuals who aspire to achieve their 
-                    full potential. We will do this by providing a welcoming, happy, safe, and 
-                    supportive learning environment in which everyone is equal and all achievements 
-                    are celebrated.</p>
-
-            </section>
-            <section className="pt-3">
-                <h4>MISSION STATEMENT</h4>
-                <p>Our Mission is to provide high quality education and childcare in a safe, 
-                    respectful and inclusive environment that builds a foundation for life-long 
-                    learning.</p>
-                
-            </section>
+function Visionmission() {
+  return (
+    <div className="container2">
+      <div>
+        <img src={missionvision} alt="" className="img2" />
+      </div>
+      <div className="mission-vision">
+        <div className="mission">
+          <h2 style={{ textAlign: "center", marginBottom: "2vh" }}>
+            <b>MISSION</b>
+          </h2>
+          <h5>
+            The mission of DR. J.L TAMARGO University is to create a place where
+            students feel safe to tackle obstacles and accomplish all of their
+            goals. We strive to better our students through educational
+            experiences both in and out of the classroom.
+          </h5>
         </div>
-    )
+      </div>
+      <div className="mission-vision">
+        <div className="vision">
+          <h2 style={{ textAlign: "center", marginBottom: "2vh" }}>
+            <b>VISION</b>
+          </h2>
+          <h5>
+            Our vision is to offer a variety of opportunities to help students
+            be the best version of themselves, while having some fun along the
+            way.
+          </h5>
+        </div>
+      </div>
+    </div>
+  );
 }
-export default Visionmission
+export default Visionmission;

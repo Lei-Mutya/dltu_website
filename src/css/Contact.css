@@ -1,0 +1,39 @@
+.contact1 {
+  color: #ffd369;
+  letter-spacing: 3px;
+}
+.logo_banner {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -23vh;
+}
+.loGo {
+  width: 20%;
+}
+.containerContact {
+  padding: 20vh 10vh;
+  color: #fec00f;
+  margin-top: -15vh;
+}
+.info {
+  color: #ffd369;
+}
+.info1 {
+  margin-top: 5vh;
+}
+.info2 {
+  margin-top: 2vh;
+}
+.info3 {
+  margin-top: 2vh;
+}
+.sample {
+  background-color: #ffd369;
+  overflow: hidden;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 8vh;
+}
+.logo1 {
+  background-color: #ffd369;
+}

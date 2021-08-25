@@ -1,22 +1,61 @@
-import React from 'react'
+import React from "react";
+import "../css/Admin.css";
+import team1 from "../images/team1.png";
+import team2 from "../images/team2.png";
+import team3 from "../images/team3.png";
 
-function Administration(){
-    return(
-        <div>
-            <h1> SCHOOL ADMINISTRATION</h1>
-
-            <section>
-                <h4 className="pt-3">What are their roles?</h4>
-                <p>School administration encompasses career paths ranging from the primary school level all the way to the collegiate system. While daily duties may vary depending on the job title, these professionals share some common overarching responsibilities: 
-                    assisting students, supporting faculty, maintaining academic records and more.</p>
-                <p>The school administrator, in consultation with staff, establishes goals and
-directions for the school and leads staff to work cooperatively toward the
-achievement of these goals and directions.</p> 
-
-            </section> 
-           
+function Administration() {
+  return (
+    <div>
+      <h1 className="administration">
+        <b>SCHOOL ADMINISTRATION</b>
+      </h1>
+      <div className="container_team">
+        <div className="cardz">
+          <div>
+            <img src={team1} alt="team1" className="imgBx" />
+          </div>
+          <div className="contentBx">
+            <h3>
+              <b>DR. JL TAMARGO</b>
+            </h3>
+          </div>
+          <br />
+          <h5 className="contentBx1">FOUNDER</h5>
         </div>
+      </div>
 
-    )
+      <div className="container_team1">
+        <div className="cardz">
+          <div className="content">
+            <div>
+              <img src={team2} alt="team3" class="imgBx" />
+            </div>
+            <div className="contentBx">
+              <h3>
+                <b>SOLEIL MUTYA</b>
+              </h3>
+            </div>
+            <br />
+            <h5 className="contentBx1">Teaching Coordinator</h5>
+          </div>
+        </div>
+        <div className="cardz">
+          <div className="content">
+            <div>
+              <img src={team3} alt="team3" class="imgBx" />
+            </div>
+            <div className="contentBx">
+              <h3>
+                <b>JAIME FERRER</b>
+              </h3>
+            </div>
+            <br />
+            <h5 className="contentBx1">Assistant Coordinator</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
-export default Administration
+export default Administration;

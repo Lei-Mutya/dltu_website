@@ -1,0 +1,30 @@
+.main_course {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+  margin-top: 2vh;
+}
+.container_courses {
+  width: 100%;
+  height: 100%;
+}
+.courses {
+  display: flex;
+  justify-content: center;
+  color: #fec00f;
+  padding: 15px 20px;
+  margin-top: 2vh;
+}
+.course1 {
+  width: 100%;
+}
+.cards {
+  width: 300px;
+  box-shadow: 3px 4px 0px grey;
+}
+.bio {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: #fec00f;
+}

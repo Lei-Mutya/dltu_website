@@ -1,3 +1,19 @@
-.App {
-  text-align: center;
+body {
+  background-color: black;
+}
+.header_jl {
+  display: flex;
+  justify-content: center;
+  color: #fec00f;
+}
+.header_name {
+  font-size: 5rem;
+}
+.main_Logo {
+  width: 8%;
+}
+.mainLogo_banner {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
 }

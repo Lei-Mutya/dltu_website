@@ -1,0 +1,39 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+.administration {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  color: #fec00f;
+}
+.imgBx {
+  width: 100%;
+}
+.container_team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardz {
+  width: 330px;
+  height: 425px;
+  background: #fec00f;
+  box-shadow: 5px 7px 1px #b1a97b;
+  border-radius: 20px;
+}
+.contentBx,
+.contentBx1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5px;
+}
+
+.container_team1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5vh;
+}
