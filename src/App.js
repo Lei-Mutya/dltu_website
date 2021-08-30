@@ -28,22 +28,22 @@ function App() {
         <Navbar />
         <div className="container">
           <Switch>
-            <Route path="/test2" exact component={Home} />
+            <Route path="/" exact component={Home} />
             <Route path="/about" component={About} />
             <Route path="/visionmission" component={Visionmission} />
             <Route path="/administration" component={Administration} />
-            <Route path="/test2/admissreq" component={AdmissReq} />
-            <Route path="/test2/appform" component={AppForm} />
-            <Route path="/test2/appresult" component={AppResult} />
-            <Route path="/test2/coursesoff" component={Coursesoff} />
-            <Route path="/test2/contact" component={Contact} />
-            <Route path="/test2/sis" component={Sis} />
-            <Route path="/test2/adminlog" component={AdminLog} />
-            <Route path="/test2/adminmod" component={AdminMod} />
-            <Route path="/test2/addstudent" component={AddStudent} />
-            <Route path="/test2/applicantverify" component={ApplicantVerify} />
-            <Route path="/test2/studentlog" component={StudentLog} />
-            <Route path="/test2/studentmod" component={StudentMod} />
+            <Route path="/admissreq" component={AdmissReq} />
+            <Route path="/appform" component={AppForm} />
+            <Route path="/appresult" component={AppResult} />
+            <Route path="/coursesoff" component={Coursesoff} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/sis" component={Sis} />
+            <Route path="/adminlog" component={AdminLog} />
+            <Route path="/adminmod" component={AdminMod} />
+            <Route path="/addstudent" component={AddStudent} />
+            <Route path="/applicantverify" component={ApplicantVerify} />
+            <Route path="/studentlog" component={StudentLog} />
+            <Route path="/studentmod" component={StudentMod} />
           </Switch>
         </div>
         <Footer />
