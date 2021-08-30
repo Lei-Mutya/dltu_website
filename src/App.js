@@ -30,8 +30,8 @@ function App() {
           <Switch>
             <Route path="/test2" exact component={Home} />
             <Route path="/about" component={About} />
-            <Route path="/test2/visionmission" component={Visionmission} />
-            <Route path="/test2/administration" component={Administration} />
+            <Route path="/visionmission" component={Visionmission} />
+            <Route path="/administration" component={Administration} />
             <Route path="/test2/admissreq" component={AdmissReq} />
             <Route path="/test2/appform" component={AppForm} />
             <Route path="/test2/appresult" component={AppResult} />
