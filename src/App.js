@@ -29,7 +29,7 @@ function App() {
         <div className="container">
           <Switch>
             <Route path="/test2" exact component={Home} />
-            <Route path="/test2/about" component={About} />
+            <Route path="/about" component={About} />
             <Route path="/test2/visionmission" component={Visionmission} />
             <Route path="/test2/administration" component={Administration} />
             <Route path="/test2/admissreq" component={AdmissReq} />
